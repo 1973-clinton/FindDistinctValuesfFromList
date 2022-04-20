@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace FindDistinctValues
 {
-    public static class Logic
+    public static class Logic<T>
     {
-        public static List<string> GetDistinct(List<string> input)
+        public static List<T> GetDistinct(List<T> input)
         {
             return input.Distinct().ToList();
         }           
